@@ -1,0 +1,62 @@
+{
+    "RTP" : 97.3,
+    "resourceName" : "UX_Roulette",
+    "backgroundColor": "black",
+    "tableContourColor": "purple",
+    "Sounds" : true,
+    "gradient" : true,
+    "normalColor" : "blue",
+    "gradientColors": "#8a2be2, #0000cd, #cd1076, #8b008b",
+    "gradientSpeed": "2.1",
+    "wheelLogo": "images\\UXLogo.png",
+    "jetonValues": [
+        {
+            "color": "blue",
+            "value": 50
+        },
+        {
+            "color": "green",
+            "value": 100
+        },
+        {
+            "color": "pink",
+            "value": 500
+        },
+        {
+            "color": "red",
+            "value": 1000
+        },
+        {
+            "color": "yellow",
+            "value": 5000
+        },
+        {
+            "color": "grey",
+            "value": 10000
+        },
+        {
+            "color": "black",
+            "value": 50000
+        }
+    ],
+    "sounds" : [
+        {
+            "name": "spinSound",
+            "path": "sounds/spin.ogg"
+        },
+        {
+            "name": "betSound",
+            "path": "sounds/bet.ogg"
+        },
+        {
+            "name": "returnSound",
+            "path": "sounds/return.ogg"
+        },
+        {
+            "name": "doubleDownSound",
+            "path": "sounds/doubledown.ogg"
+        }
+    ]
+    
+}
+

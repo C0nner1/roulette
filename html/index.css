@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-transform:scale(1,1.3);
+}
+
+
+
+button{
+  position: absolute;
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  z-index: 100;
+}
+
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+
+}
+
+.gamePanel {
+  position: absolute;
+  background-color: black;
+  left: calc(50vw - 115.555vh/2);
+  width: 115.555vh;
+  top: 33%;
+  height: 40%;
+  border-width: 0.26vw;
+  border-color: green;
+  border-style: solid;
+  border-radius: 0.52vw;
+  
+}
+.fieldLabel {
+  
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7vh;
+  color: rgb(255, 255, 255);
+  z-index: 31;
+}
+
+#wheel {
+  position: absolute;
+  left: -4%;
+  top: -3%;
+  width: 108%;
+  height: 108%;
+  transform: rotate(90deg);
+  transition: 12s cubic-bezier(.31,.01,.53,1.05);
+  transform-origin: 50% 50%;
+}
+
+
+.topPanel {
+  position: absolute;
+  background-color: rgba(15, 10, 10, 0.623);
+  top: 9vh;
+  width: 53.33333vh;
+  height: 20vh;
+  border-width: 0.26vw;
+
+  border-color: green;
+  border-style: solid;
+  border-radius: 0.52vw;
+  left: calc(50vw - 53.33333vh/2);
+  z-index: 2;
+
+}
+
+.logo {
+  position: relative;
+
+  display: block;
+
+  z-index: 1000000;
+  text-align : center;
+    width: 50%;
+}
+
+.circle3 {
+  position: absolute;
+  left: 2.2%;
+  top: 8.4%;
+  width: 28.84%;
+  height: 83.3333%;
+
+  border-radius: 50%;
+  /* Rotation  */
+  animation: animate 1.5s linear infinite;
+  background: linear-gradient(blueviolet, cadetblue);
+}
+
+.circle3:after {
+  content: '';
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  bottom: 2%;
+  left: 2%;
+  border-radius: 50%;
+  background-color: black;
+
+}
+
+.circle3 span {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+}
+
+.circle3 span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.circle3 span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.circle3 span:nth-child(3) {
+  filter: blur(20px);
+}
+.circle3 span:nth-child(4) {
+  filter: blur(55px);
+}
+
+
+
+
+.circle {
+  position: absolute;
+  left: 2.6%;
+  top: 10%;
+  width: 28%;
+  height: 81%;
+  border-radius: 50%;
+}
+
+
+
+.circle2 {
+  position: absolute;
+  left: 22.9%;
+  top: 23.3%;
+  width: 54.431%;
+  height: 54.431%;
+
+  border-radius: 50%;
+  /* Rotation  */
+  animation: animate 1.5s linear infinite;
+  background: linear-gradient(blueviolet, cadetblue);
+
+
+}
+
+.rouletteBoard {
+  position: absolute;
+  left: 3.2%;
+  width: 94%;
+}
+
+.logocircle {
+  position: absolute;
+  left: 22.9%;
+  top: 23.3%;
+  width: 54.431%;
+  height: 54.431%;
+
+  border-radius: 50%;
+  /* Rotation  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.circle2:after {
+  content: '';
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  bottom: 2%;
+  left: 2%;
+  border-radius: 50%;
+  background-color: black;
+
+}
+
+.circle2 span {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+}
+
+.circle2 span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.circle2 span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.circle2 span:nth-child(3) {
+  filter: blur(20px);
+}
+.circle2 span:nth-child(4) {
+  filter: blur(55px);
+}
+
+.titlePanel {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  display: table;
+}
+
+.buttonPanel {
+  position: absolute;
+  background-color: black;
+  width: 45%;
+  height: 14%;
+  left: 5%;
+  top: 33%;
+  text-align: center;
+  display: table;
+}
+
+.textPanel {
+  position: absolute;
+  left: 60%;
+  width: 43%;
+  height: 27%;
+  text-align: center;
+  display: table;
+}
+
+.textRight {
+  position: absolute;
+  left: 41%;
+  height: 9%;
+  text-align: right;
+  
+}
+
+.status {
+  position: absolute;
+  top: -0.3%;
+  left: 70%;
+  height: 6%;
+  text-align: left;
+  display: table;
+  color: green;
+  font-size: 1.5vh;
+}
+
+.selectedJeton {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  height: 5%;
+  width: 9%;
+  background-color: white;
+  border-style: solid;
+  border-radius: 0.3vw;
+  display: table;
+  text-align: center;
+}
+
+.board {
+  position: absolute;
+  top: 20%;
+  left: 36.5%;
+  width: 60%;
+  height: 80%;
+}
+
+.chips {
+  position: absolute;
+  left: 52%;
+  width: 40%;
+  top: 85%;
+  height: 15%;
+  z-index: 10000;
+}
+
+.chipPlaced {
+  
+  z-index: 10000;
+  width: 2.8vh;
+  height: 2.8vh;
+ 
+}
+
+.buttons {
+  position: absolute;
+  top: 76%;
+  width: 17%;
+  height: 5%;
+  background-color: green;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.13vw;
+  display: table;
+  text-align: center;
+}
+
+.purpleLine {
+  position: absolute;
+
+  background: linear-gradient(to right, blue, green, red, yellow, orange, purple, black, white);
+  background-size: 200%;
+  animation: colored 1.5s linear infinite;
+  height: 0.5vh;
+  width: 100%;
+  left: 0%;
+}
+
+@keyframes colored {
+  from {
+    background-position: 200% 200%;
+  }
+  to {
+    background-position: 0% 0%;
+  }
+}
+
+
+.whiteLine {
+  position: absolute;
+  left: 34.62%;
+  width: 0.1%;
+  height: 100%;
+  top: 0%;
+  background-color: white;
+}
+
+.fields {
+  position: absolute;
+  width: 56.2%;
+  height: 60.9%;
+  left: 38.4%;
+  top: 20.1%;
+}
+
+.number0 {
+  position: absolute;
+  left:0%;
+  top:17.5%;
+  width: 7.14%;
+  height: 35.7%;
+}
+
+.number {
+  position: absolute;
+  left:7.14%;
+  top:0%;
+  width: 7.14%;
+  height: 23.5%;
+}
+
+.duzend {
+  position: absolute;
+  left: 7.14%;
+  top:70.5%;
+  width: 28.56%;
+  height: 15%;
+}
+
+.half {
+  position: absolute;
+  left: 7.14%;
+  top: 85.5%;
+  width: 14.28%;
+  height: 15%;
+  text-align: center;
+  display: table;
+  
+}
+
+.halfLabel {
+  position: absolute;
+  left: 7.14%;
+  top: 85.5%;
+  width: 14.28%;
+  height: 15%;
+  text-align: center;
+  display: table;
+  
+}
+
+.arrow-down {
+  position: absolute;
+  left: 44.95%;
+  top: -4.41%;
+  width: 10.3%;
+  z-index: 1000;
+}
+
+.numberScreenPanel {
+  border-radius: 5%;
+  background-color: green;
+  position: absolute;
+  left: 1%;
+  top: 88%;
+  width: 7.69%;
+  height: 10.42%;
+  z-index: 17;
+  text-align: center;
+  display: table;
+}
+.numberScreen {
+  font-size: 2.5vh;
+  font-family: 'Inter', sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  
+  z-index: 29;
+}
+
+
+.notification-container {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 280px;
+  margin: 16px;
+}
+
+.notification-container[data-position^='top-'] {
+  top: 0;
+}
+
+.notification-container[data-position^='bottom-'] {
+  bottom: 0;
+}
+
+.notification-container[data-position$='-right'] {
+  right: 0;
+}
+
+.notification-container[data-position$='-left'] {
+  left: 0;
+}
+
+.notification-container[data-position$='-center'] {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+.notification {
+  border-width: 2.0px;
+  border-color: cyan;
+  border-style: solid;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  position: relative;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  margin-left: auto;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.notification-container[data-position$='-right'] .notification {
+  transform: translateX(110%);
+}
+
+.notification-container[data-position$='-left'] .notification {
+  transform: translateX(-110%);
+}
+
+.notification-container[data-position='top-center'] .notification {
+  transform: translateY(-100vh);
+}
+
+.notification-container[data-position='bottom-center'] .notification {
+  transform: translateY(100vh);
+}
+
+.notification-container .notification.show {
+  transform: translate(0, 0);
+}
+
+
+
+
+.notification.can-close::after {
+  content: '\00D7';
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
